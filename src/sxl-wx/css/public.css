@@ -1,0 +1,29 @@
+body{
+	background-color: #eee;
+}
+.header{
+	width: 100%; height: 64px; overflow: hidden;
+	background-color: #353439;
+	position: relative;
+	/*overflow: hidden;*/
+}
+
+.left{
+	width: 11px; height: 20px; position: absolute;
+	left: 4%; top: 32px;
+	
+}
+.fan{
+	width: 32px; height: 22px; left: 9.6%; top: 31px;
+	font-family: PingFangSC-Light;  display: inline-block;
+	font-size: 16px;  position: absolute;
+	color: #D8D8D8;
+	letter-spacing: 0;
+}
+.mid{
+	/*width: 20%;*/ height: 24px; left: 41.1%; top: 30px;
+	font-family: PingFangSC-Semibold; 
+	font-size: 17px; position: absolute; 
+	color: #FFFFFF; 
+	letter-spacing: 0;
+}

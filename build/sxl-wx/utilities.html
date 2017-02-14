@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+		<title>实用工具</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body class="utilities page">
+		<div class="gjlb">
+			<div class="xzms">
+				|&nbsp;&nbsp;&nbsp;请您根据自己的需求选择工具类别
+			</div>
+			<div class="nav">
+				<a href="" class="">文化</a>
+				<a href="">战略</a>
+				<a href="">环境</a>
+				<a href="">产品</a>
+				<a href="">营销</a>
+				<a href="">资金</a>
+				<a href="">人才</a>
+				<a href="">管理</a>
+				<a href="">整合</a>
+			</div>			
+		</div>
+		<div class="issue-version">
+			<div class="xzms">
+				|&nbsp;&nbsp;&nbsp;推荐您的使用案例
+			</div>
+			<div class="list-wrap">
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+				 <div class="list">
+				 	 <img src="img/logo@2x.png" class="tool-img">
+				 	 <p class="tool-name tn">工具名称</p>
+				 </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/adaptation.js"></script>
+		<script type="text/javascript">
+			 $(document).ready(function(){
+			    var l=$(".list").length;
+			    var z=parseInt(l/4);
+			    for(var i=1;i++;i<=z.length){
+			    	 var n=i*4;
+			    	 $(".list:eq(n)").CSS("margin-right","0");
+			    }
+			})
+		</script>
+	</body>
+</html>

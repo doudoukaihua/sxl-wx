@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+		<title>企业问题库</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	</head>
+	<body class="qywtk page">
+		<div class="gjlb">
+			<div class="xzms">
+				|&nbsp;&nbsp;&nbsp;请您根据自己的需求选择工具类别
+			</div>
+			<div class="nav">
+				<a href="" class="">文化</a>
+				<a href="">战略</a>
+				<a href="">环境</a>
+				<a href="">产品</a>
+				<a href="">营销</a>
+				<a href="">资金</a>
+				<a href="">人才</a>
+				<a href="">管理</a>
+				<a href="">整合</a>
+			</div>			
+		</div>
+		<div class="issue-version">
+			<div class="xzms">
+				|&nbsp;&nbsp;&nbsp;推荐您的问题样本
+			</div>
+			<div class="list">
+				<div class="bt" id="title">
+					标题大小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….
+				</div>
+				<div class="nr" id="contant">
+					糖尿病一种由于胰岛素分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因
+				</div>
+				<a href="#" id="all">
+					<div class="qw" >全文</div>
+				</a>
+			</div>		
+		</div>
+		<script type="text/javascript" src="js/adaptation.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#all").on("click",function(){
+						$("#contant").height("auto");
+						var newh1=$("#contant").height()/100;
+						var newh2=newh1+"rem";
+					if($("#contant").hasClass("show")){
+						 $("#contant").animate({height:".44rem"}).removeClass("show");
+						 $(this).text("全文").addClass("qw");;
+					}else{
+						$("#contant").animate({height:"newh2"}).addClass("show");
+						$(this).text("收起").addClass("qw");
+					}
+				});		
+				$("#title").on("click",function(){
+						$(this).height("auto");
+						var newh1=$(this).height()/100;
+						var newh2=newh1+"rem";
+					if($(this).hasClass("show")){
+						 $(this).animate({height:".22rem"}).removeClass("show");
+					}else{
+						$(this).animate({height:"newh2"}).addClass("show");
+					}
+				});	
+			})
+		</script>
+	</body>
+</html>

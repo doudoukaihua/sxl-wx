@@ -1,0 +1,2 @@
+/*! cyjs 2017-02-14 */
+!function(a,b){var c=a.documentElement,d="orientationchange"in window?"orientationchange":"resize",e=function(){var a=window.screen.width;console.log("当前屏幕screenWidth:"+a),a&&(c.style.fontSize=100*(a/375)+"px",a>1024&&(c.style.fontSize="136.533px"))};a.addEventListener&&(b.addEventListener(d,e,!1),a.addEventListener("DOMContentLoaded",e,!1))}(document,window);

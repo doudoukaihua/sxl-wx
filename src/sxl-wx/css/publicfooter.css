@@ -1,0 +1,40 @@
+.footer{
+	width: 3.75rem; height: .49rem; position: relative;
+	background: rgba(255,255,255,0.80);
+	box-shadow: inset 0 0 0 0 rgba(178,178,178,0.50);
+	position: fixed; left: 0; bottom: 0;
+}
+.fpublic{
+	width: .26rem; height: .26rem; position: absolute; top: .04rem;
+}
+.qyzdp{
+	left: .34rem; 
+}
+
+.syttp{
+	left: 1.28rem;
+}
+.sjfwp{
+	left: 2.22rem;
+}
+.wdp{
+	left: 3.14rem;
+}
+.fpublic1{
+	width: .94rem; height: .16rem; position: absolute;
+	top: .31rem; text-align: center; line-height: .16rem;
+	font-family: PingFangSC-Regular;
+	font-size: .11rem; color: #8E8E93; letter-spacing: 0.0021rem;
+}
+.qyzd{
+	left: 0; 
+}
+.sytt{
+	left: .94rem;
+}
+.sjfw{
+	left: 1.88rem;
+}
+.wd{
+	left: 2.81rem;
+}

@@ -1,0 +1,24 @@
+body{
+	background-color: #EEE;
+}
+.tb{
+	width: .82rem; height: .84rem; 
+	margin-left: 1.47rem; margin-top: .50rem;
+}
+.shz{
+	width: 1.36rem; height: .24rem; font-family: PingFangSC-Regular;
+	font-size: .17rem; color: #0F91C7; letter-spacing: 0;
+	margin-left: 1.2rem; margin-top: .42rem;
+}
+.ts{
+	/*width: 1.91rem;*/ height: .20rem; font-family: PingFangSC-Regular;
+	font-size: .14rem; color: #999999; letter-spacing: 0;
+	margin-left: .92rem; margin-top: .03rem;
+}
+button{
+	width: 3.34rem; height: .42rem; background: #0F91C7;
+	border-radius: .015rem; margin-left: .21rem;
+	margin-top: 1.03rem; font-family: PingFangSC-Regular;
+	font-size: .17rem; color: #FFFFFF; letter-spacing: 0;
+	border: 0;
+}

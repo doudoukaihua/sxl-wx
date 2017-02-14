@@ -1,0 +1,104 @@
+.xinxi{
+	width: 100%; height: 121px; background: #FFFFFF;
+	box-shadow: 0 0.5 0 0 #D9D9D9, 0 -0.5 0 0 #D9D9D9;
+	position: relative;
+}
+.txtp{
+	width: 64px; height: 64px; position: absolute;
+	left: 3.2%; top: 12px; 
+	border-radius: 50%; overflow: hidden;
+}
+.xm{
+	position: absolute; left: 23.5%; top: 13px;
+	width: 53px; height: 24px; 
+	font-family: PingFangSC-Regular;
+	font-size: 17px;
+	color: #444444;
+	letter-spacing: 0.34px;
+}
+.ewm{
+	width: 20px; height: 20px; position: absolute;
+	left: 40.3%; top: 15px; 
+}
+.bj{
+	width: 55px; height: 25px; border: 1px solid #0F91C7;
+	border-radius: 2px; position: absolute;
+	left: 81.3%; top: 17px;
+	font-family: PingFangSC-Regular;
+	font-size: 15px;
+	color: #0F91C7;
+	letter-spacing: 0.3px;
+	text-align: center; line-height: 25px;
+}
+.qymz{
+	width: 62px; height: 21px; position: absolute;
+	left: 23.5%; top: 41px; font-family: PingFangSC-Regular;
+	font-size: 15px; color: #989898; letter-spacing: 0.3px;
+}
+.gxqm{
+	width: 70%; height: 42px; position: absolute;
+	left: 23.5%; top: 66px; font-family: PingFangSC-Regular;
+	font-size: 15px; color: #989898; letter-spacing: 0.3px;
+}
+.wdwz{
+	width: 100%; height: 50px; background: #FFFFFF; position: relative;
+}
+.wdwz1{
+	margin-top: 11px;
+}
+.imgwz{
+	width: 26px; height: 26px; position: absolute;
+	left: 4%; top: 12px;
+}
+.wz{
+	font-family: PingFangSC-Regular; position: absolute;
+	font-size: 17px; left: 14.7%; top: 13px;
+	color: #444444;
+	letter-spacing: 0;
+}
+.bdsj{
+	margin-top: 13px;
+}
+/*.footer{
+	width: 100%; height: 49px; position: relative;
+	background: rgba(255,255,255,0.80);
+	box-shadow: inset 0 0 0 0 rgba(178,178,178,0.50);
+	margin-top: 31px;
+}
+.fpublic{
+	width: 26px; height: 26px; position: absolute; top: 4px;
+}
+.qyzdp{
+	left: 9%; 
+}
+
+.syttp{
+	left: 34.1%;
+}
+.sjfwp{
+	left: 59.2%;
+}
+.wdp{
+	left: 83.7%;
+}
+.fpublic1{
+	width: 25%; height: 16px; position: absolute;
+	top: 31px; text-align: center; line-height: 16px;
+	font-family: PingFangSC-Regular;
+	font-size: 11px; color: #8E8E93; letter-spacing: 0.21px;
+}
+.qyzd{
+	left: 0; 
+}
+.sytt{
+	left: 25%;
+}
+.sjfw{
+	left: 50%;
+}
+.wd{
+	left: 75%; color: #0F91C7;
+}*/
+.wd{
+	color: #0F91C7;
+}

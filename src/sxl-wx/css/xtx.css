@@ -1,0 +1,114 @@
+/*body{
+	font-size: 16px;
+}*/
+.header{
+	width: 100%; height: 64px; overflow: hidden;
+	background-color: #353439;
+	position: relative;
+	overflow: hidden;
+}
+
+.left{
+	width: 11px; height: 20px; display: inline-block;
+	margin-left: 4%; margin-top: 32px; background-color: orange;
+	
+}
+.fan{
+	width: 32px; height: 22px; margin-left: 2.6%; margin-top: 31px;
+	font-family: PingFangSC-Light;  display: inline-block;
+	font-size: 16px; 
+	color: #D8D8D8;
+	letter-spacing: 0;
+}
+.mid{
+	width: 20%; height: 24px; display: inline-block; margin-top: 30px;
+	font-family: PingFangSC-Semibold; margin-left: 18.7%;
+	font-size: 17px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+.container1{
+	width: 100%; height: 64px; background: #FFFFFF; overflow: hidden; /*background-color: yellow;*/ 
+}
+.tou{
+	height: 24px; margin-left: 4%;
+	font-family: PingFangSC-Regular; float: left;
+	color: #444444;
+	letter-spacing: 0;
+}
+.img1{
+	margin-left: 31.7%; margin-top: 10px; 
+}
+.container2{
+	width: 100%; height: 50px; background: #FFFFFF; overflow: hidden; /*background-color: green;*/
+}
+/*.tou::after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}*/
+.tou2,.tou3,.tou4{
+	margin-top: 13px;
+}
+.tou1{
+	width: 34px; margin-top: 18px;
+}
+.tou2{
+	width: 34px; 
+}
+.tou3{
+	width: 68px;
+}
+.tou4{
+	margin-top: 13px; width: 85px;
+}
+.shu{
+	margin-left: 31.2%; margin-top: 15px; 
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #999999;
+	letter-spacing: 0;
+}
+.btn{
+	width: 89%; height: 42px; background: #0F91C7; border-radius: 1.5px;
+	margin-top: 54px; margin-left: 5.6%; font-family: PingFangSC-Regular;
+	font-size: 17px; color: #FFFFFF; letter-spacing: 0;
+}
+
+.zpk{
+	width: 94%; height: 56px; margin-left: 3%; 
+	text-align: center; line-height: 56px;
+	font-family: PingFangSC-Regular;
+	font-size: 20px; display: none;
+	color: #444444;
+	letter-spacing: 0.38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

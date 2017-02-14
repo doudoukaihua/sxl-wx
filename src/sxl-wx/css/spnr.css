@@ -1,0 +1,62 @@
+body{
+	background-color: #EEE;
+}
+img{
+	width: 100%; height: 100%; position: absolute;
+}
+.kuang{
+	width: 3.75rem; height: 5.11rem; background: #FFFFFF;
+	box-shadow: 0 0 0 0 #D9D9D9, 0 0 0 0 #D9D9D9;
+	border-bottom: 0.005rem solid #D9D9D9;
+	overflow: hidden;
+}
+.bt{
+	width: 0.4rem; height: 0.28rem; margin-left: 0.15rem;
+	margin-top: 0.17rem; font-family: PingFangSC-Regular;
+	font-size: 0.2rem; color: #333333; letter-spacing: 0;
+}
+.sjxm{
+	/*width: 167px;*/ height: 0.16rem; margin-left: 0.15rem;
+	margin-top: 0.1rem; font-family: PingFangSC-Regular;
+	font-size: 0.11rem; color: #A3A3A3; letter-spacing: -0.005rem;
+}
+.vid{
+	width: 3.4rem; height: 1.64rem; margin-left: .15rem; 
+	margin-top: 0.2rem;
+}
+.content{
+	width: 3.38rem; height: 2rem; margin-left: 0.18rem;
+	margin-top: 0.2rem; font-family: PingFangSC-Regular;
+	font-size: 0.14rem; color: #2B2B2B;
+	letter-spacing: 0.003rem; line-height: 0.24rem;
+}
+.footer{
+	width: 3.75rem; height: 0.60rem; position: fixed;
+	left: 0; bottom: 0; background: #666666;
+	border-radius: 0.01rem; 
+}
+.close{
+	width: 0.16rem; height: 0.16rem; position: absolute;
+	left: 0.1rem; top: 0.22rem; 
+}
+.logo{
+	width: 0.4rem; height: 0.4rem; position: absolute;
+	left: 0.41rem; top: 0.1rem; background: #FFFFFF;
+	border-radius: 0.04rem;
+}
+.logo img{
+	width: .29rem; height: .32rem; margin-left: .05rem;
+	margin-top: .04rem;
+}
+.ms{
+	width: 1.84rem; height: 0.21rem; position: absolute;
+	left: 0.91rem; top: 0.20rem; font-family: PingFangSC-Regular;
+	font-size: 0.15rem; color: #FFFFFF; letter-spacing: 0;
+}
+button{
+	width: 0.9rem; height: 0.38rem; position: absolute;
+	background: #0F91C7; border-radius: 1rem;
+	left: 2.75rem; top: 0.11rem; font-family: PingFangSC-Regular;
+	font-size: 0.14rem; color: #FFFFFF; letter-spacing: 0;
+	border: 0;
+}

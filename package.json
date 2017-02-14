@@ -1,0 +1,18 @@
+{
+  "name": "cyjs",
+  "version": "0.1.0",
+  "description": "js for k68.org",
+  "homepage": "http://www.k68.org/",
+  "author": "firebaby",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-compress": "^1.4.1",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
