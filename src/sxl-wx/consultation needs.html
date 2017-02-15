@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" CONTENT="-1">           
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>会诊申请</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	    <script src="js/adaptation.js"></script>
+	</head>
+	<body class="consultation-needs page">
+		<form method="GET" action="">
+			<div class="almc">
+				我的会诊需求
+			</div>
+			<div class="albt">
+				<input type="text" placeholder="简单描述您的需求，40字以内" id="albt"/>
+			</div>
+			<div class="almc">
+				详细描述
+			</div>
+			<div class="xqms">
+				<textarea name="" rows="" cols="" placeholder="请描述您的具体需求，服务商可以更好的为您服务，300字以内" id="xqms"></textarea>
+			</div>
+			<button class="tn" id="submit">
+				提交
+			</button>			
+		</form>
+		<p class="tn">提交需求后，我们工作人员会尽快与您联系</p>
+		<script src="js/jquery-3.1.1.min.js"></script>
+	    <script type="text/javascript">
+	    $(function(){
+	    	$("#submit").click(function(){
+	    			$.ajax({
+		             type: "GET",
+		             url: "http://192.168.1.230/shangxuelian/sysAd/getAd.html",
+//		             data: {albt:$("#albt"). val(), xqms:$("#xqms").val()},
+		             dataType: "json",
+		             success: function(data){
+		                         console.log(data.message);
+		                       var jsondate = eval("("+data+")")  
+		                   },
+		           });	    
+	    	})
+	    })
+	    </script>
+	</body>
+</html>

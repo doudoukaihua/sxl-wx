@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" CONTENT="-1">           
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>企业文化问题库</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="cultural-problem page">
+			<div class="list">
+				<div class="bt" id="title">
+					标题大小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….小显示一行多了显示省略号知….
+				</div>
+				<div class="nr" id="contant">
+					糖尿病一种由于胰岛素分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因分泌缺陷导致的慢性一旦患上糖尿病就需要对饮食有着严格的控制。因
+				</div>
+				<a href="#" id="all">
+					<div class="qw" >全文</div>
+				</a>
+			</div>	
+		<script type="text/javascript" src="js/adaptation.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#all").on("click",function(){
+						$("#contant").height("auto");
+						var newh1=$("#contant").height()/100;
+						var newh2=newh1+"rem";
+					if($("#contant").hasClass("show")){
+						 $("#contant").animate({height:".44rem"}).removeClass("show");
+						 $(this).text("全文").addClass("qw");;
+					}else{
+						$("#contant").animate({height:"newh2"}).addClass("show");
+						$(this).text("收起").addClass("qw");
+					}
+				});		
+				$("#title").on("click",function(){
+						$(this).height("auto");
+						var newh1=$(this).height()/100;
+						var newh2=newh1+"rem";
+					if($(this).hasClass("show")){
+						 $(this).animate({height:".22rem"}).removeClass("show");
+					}else{
+						$(this).animate({height:"newh2"}).addClass("show");
+					}
+				});	
+			})
+		</script>
+	</body>
+</html>

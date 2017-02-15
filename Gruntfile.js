@@ -81,7 +81,7 @@ module.exports = function(grunt) {
 					  minify: {
 					    expand: true,       
 					    cwd: 'src/sxl-wx/css/',    
-					    src: ['*.css', '!*.min.css'],   
+					    src: ['*.css'],   
 					    dest: 'build/sxl-wx/css/',   
 					    ext: '.css'       
 					  }
