@@ -21,17 +21,25 @@
 			</div>
 			<div class="nav-wrap">
 				<div class="nav">
-					<a href="">文化</a>
-					<a href="">战略</a>
-					<a href="">环境</a>
-					<a href="">产品</a>
-					<a href="">营销</a>
-					<a href="">资金</a>
-					<a href="">人才</a>
-					<a href="">管理</a>
-					<a href="">整合</a>
+					<a href="problem description.html">文化</a>
+					<a href="problem description.html">战略</a>
+					<a href="problem description.html">环境</a>
+					<a href="problem description.html">产品</a>
+					<a href="problem description.html">营销</a>
+					<a href="problem description.html">资金</a>
+					<a href="problem description.html">人才</a>
+					<a href="problem description.html">管理</a>
+					<a href="problem description.html">整合</a>
 				</div>					
 			</div>
         <script type="text/javascript" src="js/adaptation.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript">
+        	$(function(){
+                $(".nav").children("a").on("click",function(){
+                      localStorage.typename=$(this).text();
+                })
+			})
+        </script>
 	</body>
 </html>

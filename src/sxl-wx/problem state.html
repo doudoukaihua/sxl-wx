@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" CONTENT="-1">           
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>问题状态</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="problem-state page">
+        <ul class="tn">
+        	<li>发布问题</li>
+        	<li>正在匹配</li>
+        	<li>诊断中</li>
+        	<li>诊断完成</li>
+        </ul>
+        <p class="time tn">我们的工作时间是周一至周五 8:30-17:30 为您匹配的专家将会在24小时内回应您的问题</p>
+        <div class="stage-wrap" id="stage-wrap">
+        	<p id="btntoggle" class="btntoggle tn">收起问题</p>
+        	<div>
+        		<p id="typename" class="typename tn"></p>
+        		<div id="titile" class="titile"></div>
+        	</div>
+        </div>
+        <script type="text/javascript" src="js/adaptation.js"></script>
+	    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var title=localStorage.title;
+			    var typename=localStorage.typename;
+                var describe=localStorage.describe;
+                console.log(titile);
+                $("#titile").text(title);
+                $("#typename").text(typename);
+                $("#describe").text(describe);
+                localStorage.clear();
+				$("#btntoggle").on("click",function(){
+						$("#stage-wrap").height("auto");
+						var newh1=$("#stage-wrap").height()/100;
+						var newh2=newh1+"rem";
+					if($("#stage-wrap").hasClass("show")){
+						 $("#stage-wrap").animate({height:".4rem"}).removeClass("show");
+						 $(this).text("展开问题");
+					}else{
+						$("#stage-wrap").animate({height:"newh2"}).addClass("show");
+						$(this).text("收起问题");
+					}
+				});	
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" CONTENT="-1">           
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>企业问题库</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="problem-description page">
+       <div class="tn">
+       	 <img src="img/箭头@1.5x.png">
+       	 <i>问题描述</i>
+       	 <a href="problem state.html" id="submit">提交</a>
+       </div> 
+       <div class="type">
+         <i id="typename"></i>
+       	 <img src="img/箭头@1.5x.png">
+       </div>
+       <form method="get" action="index.html">
+	       	<input type="text" placeholder="请输入标题(必填)" id="title">
+	       	<!--<div class="voice">
+	       		添加语音描述
+	       	</div>-->
+            <input type="text" placeholder="添加语音描述" speech x-webkit-speech onwebkitspeechchange=”alert(this.value)”  class="voice"/>
+      <!--      <textarea placeholder="添加图片文字描述"></textarea>-->
+            <input type="file" accept="image/*" multiple class="describe" id="describe">
+		    <!--<input type="file" accept="video/*" capture="camcorder">-->
+	<!--	    <input type="file" accept="audio/*" capture="microphone">-->
+      </form>
+	    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	    <script type="text/javascript">
+	    	$(function(){
+                    var typename=localStorage.typename;
+	            	$("#typename").text(typename);
+		            $("#submit").click(function(){
+			            localStorage.title=$("#title").val();
+	                    localStorage.describe=$("#describe").val();
+	                    console.log(localStorage.title);
+	                    console.log(localStorage.describe);
+            			$("form").submit(function(){
+            				if(!$(this).val()==""){
+            					return true;
+            					console.log("表单提交成功");
+            				}else{
+            				    return false;	
+            				    console.log("表单提交失败");
+            				}
+            			})
+		            });
+		        	$("input").blur(function(){
+		        		var val=$(this).val();
+		        		if(val==""){
+		        			$("#submit").css("color","#999");
+		        			return false;
+		        		}else{
+		        			$("#submit").css("color","#000");
+		        			return true;
+		        		}
+		        	})
+			})
+	    </script>
+	</body>
+</html>

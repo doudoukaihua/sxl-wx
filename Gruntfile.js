@@ -102,15 +102,23 @@ module.exports = function(grunt) {
 					      	},  ]
 					  }
 					},
-					sass: {
-					   dist: {
-					     files: { 
-					      "src/sxl-wx/css/*.css": "src/sxl-wx/scss/*.scss"
-					     },
-					     options: {
-					        sourcemap: "true"     
-					     }
-					} },
+				    sass: {
+				        dist: {
+				            files: [{
+				                expand: true,
+				                cwd: 'src/sxl-wx/scss/',
+				                src: ['*.scss'],
+				                dest: 'src/sxl-wx/scss/',
+				                ext: '.css'
+				            }]
+				        }
+				    },
+					concat : {
+			            css : {
+			                src: ['src/sxl-wx/css/style.css','src/sxl-wx/scss/style.css'],
+			                dest:'src/sxl-wx/css/style.css'
+			            }
+			        },
 	    }); 
 	    
 
@@ -122,14 +130,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin'); 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks('grunt contrib sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
 
-	grunt.event.on('watch', function(action, filepath, target) {
-		grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
-	});
-//     grunt.registerTask('watch',['watch']);                                  
-    grunt.registerTask('default', ['concat','uglify','imagemin','cssmin','jshint','copy','compress']);  
+//	grunt.event.on('watch', function(action, filepath, target) {
+//		grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+//	});
+    grunt.registerTask('watch',['watch']);                                  
+    grunt.registerTask('default', ['imagemin','cssmin','jshint','uglify','copy','compress']);  
 
 } 
   
