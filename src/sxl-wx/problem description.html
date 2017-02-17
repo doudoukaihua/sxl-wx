@@ -45,8 +45,8 @@
 	                    localStorage.describe=$("#describe").val();
 	                    console.log(localStorage.title);
 	                    console.log(localStorage.describe);
-            			$("form").submit(function(){
-            				if(!$(this).val()==""){
+            			$("form").submit(function(event){
+            				if(!$("input").val()==""){
             					return true;
             					console.log("表单提交成功");
             				}else{
@@ -55,15 +55,8 @@
             				}
             			})
 		            });
-		        	$("input").blur(function(){
-		        		var val=$(this).val();
-		        		if(val==""){
-		        			$("#submit").css("color","#999");
-		        			return false;
-		        		}else{
-		        			$("#submit").css("color","#000");
-		        			return true;
-		        		}
+		        	$("input").keydown(function(){
+		        		$("#submit").css("color","#000");
 		        	})
 			})
 	    </script>

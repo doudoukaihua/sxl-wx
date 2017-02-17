@@ -10,7 +10,7 @@
     "icons": {
         "72": "icon.png"
     },
-    "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "launch_path": "problem description.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
     "developer": {
         "name": "",/*开发者名称*/
         "email": "",/*开发者邮箱地址*/
@@ -262,6 +262,16 @@
 					"css/qywtk.css",
 					"img/problem@1.5x.png",
 					"css/xqxq.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"problem description.html": {
+				"resources": [
+					"img/箭头@1.5x.png",
+					"js/jquery-3.1.1.min.js",
+					"css/style.css",
+					"css/normalize.css"
 				],
 				"refer": [],
 				"priority": 0
